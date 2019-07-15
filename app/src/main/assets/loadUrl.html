@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=gb2312" />
+    <title>登录</title>
+    <script language="javascript">
+        function realSysTime(clock) {
+            var now = new Date();
+            var year = now.getFullYear();
+            var month = now.getMonth();
+            var date = now.getDate();
+            var day = now.getDay();
+            var hour = now.getHours();
+            var minu = now.getMinutes();
+            var sec = now.getSeconds();
+            if (Number(sec) < 10) {
+                sec = "0" + sec.toString();
+            }
+            month = month + 1;
+            var arr_week = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+            var week = arr_week[day];
+            var time = year + "年" + month + "月" + date + "日 " + week + " " + hour + ":" + minu + ":" + sec;
+            clock.innerHTML = time;
+        }
+        window.onload = function () {
+            window.setInterval("realSysTime(clock)", 1000);
+        }
+
+		<!--
+		function getFocus(obj) {
+            obj.style.color = 'black';
+            obj.style.background = '#white';
+        }
+        function getBlur(obj) {
+            obj.style.color = 'black';
+            obj.style.background = 'white';
+        }
+        function isInt(elm) {
+            if (isNaN(elm)) {
+                alert("请输入6位纯数字密码！");
+                document.forml.password.value = "";
+                return false;
+            }
+            if (elm.length != 6) {
+                alert("请输入6位纯数字密码！");
+                document.forml.password.value = "";
+                return false;
+            }
+        }
+		//-->
+    </script>
+    <style>
+        .time1 {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+		.sign{
+		    margin: 0 auto;
+			width: 300px;
+			height: 120px;
+			background-color:rgba(147,185,238,0.30);
+			line-height: 40px;
+			text-align: center;
+			color: aliceblue;
+		}
+
+    </style>
+</head>
+<body background="signinimg.jpg">
+<div id="clock" class="time1"></div>
+<br><br><br><br><br><br><br><br>
+<h2 style="text-align: center">个人简历登录系统</h2>
+<div id="signin" class="sign">
+    <form name="forml" onsubmit="return isInt(this.password.value)">
+        姓名 <input type="text" name="username" onFocus=getFocus(this) onBlur=getBlur(this)><br>
+        密码 <input type="password" name="password"><br>
+        <input type="submit" value="登录"><br>
+    </form>
+</div>
+</body>
+</html>

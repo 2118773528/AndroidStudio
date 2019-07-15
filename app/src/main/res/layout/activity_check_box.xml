@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".CheckBoxActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="70dp"
+        android:text="你喜欢哪种类型的女生："
+        android:textSize="22sp"
+        android:textColor="#000000"/>
+
+    <CheckBox
+        android:id="@+id/cb_1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/tv_title"
+        android:button="@drawable/bg_checkbox"
+        android:paddingLeft="10dp"
+        android:text="长得好看的"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/cb_2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/cb_1"
+        android:button="@drawable/bg_checkbox"
+        android:paddingLeft="10dp"
+        android:text="身材好的"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/cb_3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/cb_2"
+        android:button="@drawable/bg_checkbox"
+        android:paddingLeft="10dp"
+        android:text="瘦瘦高高的"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/cb_4"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/cb_3"
+        android:button="@drawable/bg_checkbox"
+        android:paddingLeft="10dp"
+        android:text="呆萌可爱的"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/cb_5"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/cb_4"
+        android:button="@drawable/bg_checkbox"
+        android:paddingLeft="10dp"
+        android:text="其他"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".RadioButtonActivity">
+
+    <TextView
+        android:id="@+id/tv_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="你到底是男是女"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="#000000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="90dp">
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当然是男的"
+            android:checked="true"
+            android:textSize="20sp"
+            android:textColor="#0000CD"/>
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:text="当然是女的"
+            android:textSize="20sp"
+            android:textColor="#0000CD"/>
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:text="你猜啊"
+            android:textSize="20sp"
+            android:textColor="#0000CD"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/rg_1"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="100dp">
+        <RadioButton
+            android:id="@+id/rb_4"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@drawable/selector"
+            android:text="男"
+            android:button="@null"
+            android:checked="true"
+            android:textSize="20sp"
+            android:textColor="#00CD00"/>
+        <RadioButton
+            android:id="@+id/rb_5"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:background="@drawable/selector"
+            android:text="女"
+            android:button="@null"
+            android:textSize="20sp"
+            android:textColor="#00CD00"/>
+    </RadioGroup>
+
+
+</RelativeLayout>
